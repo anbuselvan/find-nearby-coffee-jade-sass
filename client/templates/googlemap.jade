@@ -1,0 +1,20 @@
+template(name='googleMap')
+  .row
+    .col-md-10.col-md-offset-1
+      .panel.panel-default
+        .panel-heading
+          h5 Search Venues
+        .panel-body
+          .row
+            .col-md-6
+              .input-group
+                span.input-group-addon Enter city:
+                input#input-city.form-control(type='text')
+            .col-md-6
+              .input-group
+                input#input-search.form-control(type='text')
+                .input-group-btn
+                  button#btn-search.btn.btn-default Search Venue
+          .row
+            .col-md-12
+              #map-canvas

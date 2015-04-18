@@ -1,2 +1,2 @@
-# find-nearby-coffee-jade-sass
+# Find nearby
 Find nearby venues

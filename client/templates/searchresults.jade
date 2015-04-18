@@ -1,0 +1,36 @@
+template(name='searchResults')
+  .row
+    .col-md-10.col-md-offset-1
+      .panel.panel-default
+        .panel-heading
+          h5 Search Results
+        .panel-body
+          table#search-result.table.table-hover.table-condensed
+            thead
+              tr
+                th
+                th
+                th Name
+                th Address
+                th City
+            tbody
+              each searchResults
+                tr
+                  td
+                    input.chk-search(type='checkbox', data='#{pid}')
+                  td
+                    img(src='#{img}')
+                  td= name
+                  td= address
+                  td= city
+        .panel-footer
+          .row
+            .col-md-3
+              button#save.btn.btn-block.btn-primary Save selected
+            .col-md-3
+              .input-group
+                span.input-group-addon CSV:
+                .input-group-btn
+                  button#exports.btn.btn-block.btn-default Export selected
+                .input-group-btn
+                  button#exporta.btn.btn-block.btn-default Export all
